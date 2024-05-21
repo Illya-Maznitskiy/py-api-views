@@ -12,9 +12,7 @@ from cinema.views import (
 
 
 cinema_hall_list = CinemaHallViewSet.as_view(
-    actions={
-        "get": "list", "post": "create"
-    }
+    actions={"get": "list", "post": "create"}
 )
 cinema_hall_detail = CinemaHallViewSet.as_view(
     actions={
